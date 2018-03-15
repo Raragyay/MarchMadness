@@ -1,7 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
-
+from selenium import webdriver
 from custom_exceptions import DisallowedConnection
+from selenium.webdriver.firefox.options import Options
 
 
 def isolatebaseurl(url):
@@ -24,7 +25,7 @@ def isolatebaseurl(url):
 
 def establish_connection(url):
     """
-    Uses the requests library to establish a connection with the website, assuming that
+    Uses the selenium library to establish a connection with the website, assuming that
     its robots.txt allows it.
     :param url: The URL to be requested.
     :return: The website in raw html form.
@@ -37,8 +38,15 @@ def establish_connection(url):
     if robotwebsite.status_code == 200:
         # If the robots.txt accepts the connection, go ahead with returning the website.
         print('{} has accepted your connection! Hooray!'.format(url))
-        website = requests.get(url, headers=my_header)
-        return website
+        options = Options()
+        options.add_argument('--headless')
+        driver = webdriver.Firefox(firefox_options=options,
+                                   executable_path=r'C:\Users\Arthur Chen\PycharmProjects\
+                                   MarchMadness\geckodriver\geckodriver.exe')
+        driver.get('https://www.cbssports.com/collegebasketball/ncaa-tournament/brackets/viewable_men')
+        html = driver.page_source
+        driver.close()
+        return html
     else:
         # Some websites, like the Economist, reject the connection.
         # Therefore, we raise a custom exception with the status code of the website,
@@ -54,4 +62,4 @@ def soupify(url):
     establish_connection function, then soupified and returned.
     :return: The souped up version of the website
     """
-    return BeautifulSoup(establish_connection(url).text, 'html.parser')
+    return BeautifulSoup(establish_connection(url), 'html.parser')
