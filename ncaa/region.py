@@ -1,5 +1,3 @@
-import pprint
-
 from ncaa.team import Team
 
 

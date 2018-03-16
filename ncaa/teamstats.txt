@@ -1,0 +1,444 @@
+{
+    "0": {
+        "LIU-Brooklyn": {
+            "name": "LIU-Brooklyn",
+            "region": "First Four",
+            "seed": 16,
+            "score": 61
+        },
+        "Radford": {
+            "name": "Radford",
+            "region": "First Four",
+            "seed": 16,
+            "score": 71
+        },
+        "St. Bona.": {
+            "name": "St. Bona.",
+            "region": "First Four",
+            "seed": 11,
+            "score": 65
+        },
+        "UCLA": {
+            "name": "UCLA",
+            "region": "First Four",
+            "seed": 11,
+            "score": 58
+        },
+        "Arizona St.": {
+            "name": "Arizona St.",
+            "region": "First Four",
+            "seed": 11,
+            "score": 56
+        },
+        "Syracuse": {
+            "name": "Syracuse",
+            "region": "First Four",
+            "seed": 11,
+            "score": 60
+        },
+        "N.C. Central": {
+            "name": "N.C. Central",
+            "region": "First Four",
+            "seed": 16,
+            "score": 46
+        },
+        "Texas So.": {
+            "name": "Texas So.",
+            "region": "First Four",
+            "seed": 16,
+            "score": 64
+        }
+    },
+    "1": {
+        "Virginia": {
+            "name": "Virginia",
+            "region": "South",
+            "seed": 1,
+            "score": 0
+        },
+        "UMBC": {
+            "name": "UMBC",
+            "region": "South",
+            "seed": 16,
+            "score": 0
+        },
+        "Creighton": {
+            "name": "Creighton",
+            "region": "South",
+            "seed": 8,
+            "score": 0
+        },
+        "Kansas St.": {
+            "name": "Kansas St.",
+            "region": "South",
+            "seed": 9,
+            "score": 0
+        },
+        "Kentucky": {
+            "name": "Kentucky",
+            "region": "South",
+            "seed": 5,
+            "score": 50
+        },
+        "Davidson": {
+            "name": "Davidson",
+            "region": "South",
+            "seed": 12,
+            "score": 49
+        },
+        "Arizona": {
+            "name": "Arizona",
+            "region": "South",
+            "seed": 4,
+            "score": 0
+        },
+        "Buffalo": {
+            "name": "Buffalo",
+            "region": "South",
+            "seed": 13,
+            "score": 0
+        },
+        "Miami (Fla.)": {
+            "name": "Miami (Fla.)",
+            "region": "South",
+            "seed": 6,
+            "score": 62
+        },
+        "Loyola-Chi.": {
+            "name": "Loyola-Chi.",
+            "region": "South",
+            "seed": 11,
+            "score": 64
+        },
+        "Tennessee": {
+            "name": "Tennessee",
+            "region": "South",
+            "seed": 3,
+            "score": 73
+        },
+        "Wright St.": {
+            "name": "Wright St.",
+            "region": "South",
+            "seed": 14,
+            "score": 47
+        },
+        "Nevada": {
+            "name": "Nevada",
+            "region": "South",
+            "seed": 7,
+            "score": 0
+        },
+        "Texas": {
+            "name": "Texas",
+            "region": "South",
+            "seed": 10,
+            "score": 0
+        },
+        "Cincinnati": {
+            "name": "Cincinnati",
+            "region": "South",
+            "seed": 2,
+            "score": 0
+        },
+        "Georgia St.": {
+            "name": "Georgia St.",
+            "region": "South",
+            "seed": 15,
+            "score": 0
+        }
+    },
+    "2": {
+        "Villanova": {
+            "name": "Villanova",
+            "region": "East",
+            "seed": 1,
+            "score": 81
+        },
+        "Radford": {
+            "name": "Radford",
+            "region": "East",
+            "seed": 16,
+            "score": 50
+        },
+        "Va. Tech": {
+            "name": "Va. Tech",
+            "region": "East",
+            "seed": 8,
+            "score": 0
+        },
+        "Alabama": {
+            "name": "Alabama",
+            "region": "East",
+            "seed": 9,
+            "score": 0
+        },
+        "W. Virginia": {
+            "name": "W. Virginia",
+            "region": "East",
+            "seed": 5,
+            "score": 0
+        },
+        "Murray St.": {
+            "name": "Murray St.",
+            "region": "East",
+            "seed": 12,
+            "score": 0
+        },
+        "Wichita St.": {
+            "name": "Wichita St.",
+            "region": "East",
+            "seed": 4,
+            "score": 0
+        },
+        "Marshall": {
+            "name": "Marshall",
+            "region": "East",
+            "seed": 13,
+            "score": 0
+        },
+        "Florida": {
+            "name": "Florida",
+            "region": "East",
+            "seed": 6,
+            "score": 0
+        },
+        "St. Bona.": {
+            "name": "St. Bona.",
+            "region": "East",
+            "seed": 11,
+            "score": 0
+        },
+        "Texas Tech": {
+            "name": "Texas Tech",
+            "region": "East",
+            "seed": 3,
+            "score": 27
+        },
+        "SF Austin": {
+            "name": "SF Austin",
+            "region": "East",
+            "seed": 14,
+            "score": 30
+        },
+        "Arkansas": {
+            "name": "Arkansas",
+            "region": "East",
+            "seed": 7,
+            "score": 0
+        },
+        "Butler": {
+            "name": "Butler",
+            "region": "East",
+            "seed": 10,
+            "score": 0
+        },
+        "Purdue": {
+            "name": "Purdue",
+            "region": "East",
+            "seed": 2,
+            "score": 0
+        },
+        "CSFullerton": {
+            "name": "CSFullerton",
+            "region": "East",
+            "seed": 15,
+            "score": 0
+        }
+    },
+    "3": {
+        "Xavier": {
+            "name": "Xavier",
+            "region": "West",
+            "seed": 1,
+            "score": 0
+        },
+        "Texas So.": {
+            "name": "Texas So.",
+            "region": "West",
+            "seed": 16,
+            "score": 0
+        },
+        "Missouri": {
+            "name": "Missouri",
+            "region": "West",
+            "seed": 8,
+            "score": 0
+        },
+        "Florida St.": {
+            "name": "Florida St.",
+            "region": "West",
+            "seed": 9,
+            "score": 0
+        },
+        "Ohio St.": {
+            "name": "Ohio St.",
+            "region": "West",
+            "seed": 5,
+            "score": 81
+        },
+        "S. Dak. St.": {
+            "name": "S. Dak. St.",
+            "region": "West",
+            "seed": 12,
+            "score": 73
+        },
+        "Gonzaga": {
+            "name": "Gonzaga",
+            "region": "West",
+            "seed": 4,
+            "score": 68
+        },
+        "UNC-Green.": {
+            "name": "UNC-Green.",
+            "region": "West",
+            "seed": 13,
+            "score": 64
+        },
+        "Houston": {
+            "name": "Houston",
+            "region": "West",
+            "seed": 6,
+            "score": 39
+        },
+        "San Diego St": {
+            "name": "San Diego St",
+            "region": "West",
+            "seed": 11,
+            "score": 29
+        },
+        "Michigan": {
+            "name": "Michigan",
+            "region": "West",
+            "seed": 3,
+            "score": 0
+        },
+        "Montana": {
+            "name": "Montana",
+            "region": "West",
+            "seed": 14,
+            "score": 0
+        },
+        "Texas A&M": {
+            "name": "Texas A&M",
+            "region": "West",
+            "seed": 7,
+            "score": 0
+        },
+        "Providence": {
+            "name": "Providence",
+            "region": "West",
+            "seed": 10,
+            "score": 0
+        },
+        "N. Carolina": {
+            "name": "N. Carolina",
+            "region": "West",
+            "seed": 2,
+            "score": 0
+        },
+        "Lipscomb": {
+            "name": "Lipscomb",
+            "region": "West",
+            "seed": 15,
+            "score": 0
+        }
+    },
+    "4": {
+        "Kansas": {
+            "name": "Kansas",
+            "region": "Mid-West",
+            "seed": 1,
+            "score": 76
+        },
+        "Penn": {
+            "name": "Penn",
+            "region": "Mid-West",
+            "seed": 16,
+            "score": 60
+        },
+        "Seton Hall": {
+            "name": "Seton Hall",
+            "region": "Mid-West",
+            "seed": 8,
+            "score": 94
+        },
+        "NC State": {
+            "name": "NC State",
+            "region": "Mid-West",
+            "seed": 9,
+            "score": 83
+        },
+        "Clemson": {
+            "name": "Clemson",
+            "region": "Mid-West",
+            "seed": 5,
+            "score": 0
+        },
+        "New Mex. St.": {
+            "name": "New Mex. St.",
+            "region": "Mid-West",
+            "seed": 12,
+            "score": 0
+        },
+        "Auburn": {
+            "name": "Auburn",
+            "region": "Mid-West",
+            "seed": 4,
+            "score": 0
+        },
+        "Charleston": {
+            "name": "Charleston",
+            "region": "Mid-West",
+            "seed": 13,
+            "score": 0
+        },
+        "TCU": {
+            "name": "TCU",
+            "region": "Mid-West",
+            "seed": 6,
+            "score": 0
+        },
+        "Syracuse": {
+            "name": "Syracuse",
+            "region": "Mid-West",
+            "seed": 11,
+            "score": 0
+        },
+        "Michigan St.": {
+            "name": "Michigan St.",
+            "region": "Mid-West",
+            "seed": 3,
+            "score": 0
+        },
+        "Bucknell": {
+            "name": "Bucknell",
+            "region": "Mid-West",
+            "seed": 14,
+            "score": 0
+        },
+        "Rhode Island": {
+            "name": "Rhode Island",
+            "region": "Mid-West",
+            "seed": 7,
+            "score": 83
+        },
+        "Oklahoma": {
+            "name": "Oklahoma",
+            "region": "Mid-West",
+            "seed": 10,
+            "score": 78
+        },
+        "Duke": {
+            "name": "Duke",
+            "region": "Mid-West",
+            "seed": 2,
+            "score": 89
+        },
+        "Iona": {
+            "name": "Iona",
+            "region": "Mid-West",
+            "seed": 15,
+            "score": 67
+        }
+    }
+}

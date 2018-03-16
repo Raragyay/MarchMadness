@@ -1,5 +1,3 @@
-import pprint
-
 from jsoninterchange import loader, dumper
 from ncaa.region import Region
 from ncaa.team import Team
@@ -7,7 +5,7 @@ from urlconnection import soupify
 
 
 class Bracket:
-    def __init__(self):
+    def __init__(self, round_num):
         self.region_0 = Region()
         self.region_1 = Region()
         self.region_2 = Region()
@@ -28,6 +26,7 @@ class Bracket:
             3: 'West',
             4: 'Mid-West'
         }
+        self.round_num = round_num
 
     def load_team_stats(self):
         regions = loader('teamstats')
@@ -47,7 +46,7 @@ class Bracket:
 
     def scrape_names(self):
         soup = soupify('https://www.cbssports.com/collegebasketball/ncaa-tournament/brackets/viewable_men')
-        for region_num, region in enumerate(soup.find_all('li', class_='round0', limit=5)):
+        for region_num, region in enumerate(soup.find_all('li', class_=f'round{self.round_num}', limit=5)):
             region_name = self.region_names[region_num]
             print(region_num)
             for team in region.find_all('li', class_='team'):
@@ -65,6 +64,8 @@ class Bracket:
                              score=team_score))
 
 
-b = Bracket()
+b = Bracket(0)
 b.load_team_stats()
+print('Loaded')
 b.save_team_stats()
+print('Saved')

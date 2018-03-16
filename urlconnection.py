@@ -1,8 +1,10 @@
+import os
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from custom_exceptions import DisallowedConnection
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 
 def isolatebaseurl(url):
@@ -40,9 +42,13 @@ def establish_connection(url):
         print('{} has accepted your connection! Hooray!'.format(url))
         options = Options()
         options.add_argument('--headless')
+        print('Options done.')
+        gecko = os.path.normpath(os.path.join(os.path.dirname(__file__), 'geckodriver\geckodriver'))
+        binary = FirefoxBinary(r'C:\Program Files\Mozilla Firefox\firefox.exe')
+        print(gecko)
         driver = webdriver.Firefox(firefox_options=options,
-                                   executable_path=r'C:\Users\Arthur Chen\PycharmProjects\
-                                   MarchMadness\geckodriver\geckodriver.exe')
+                                   executable_path=gecko + '.exe',
+                                   firefox_binary=binary)
         driver.get('https://www.cbssports.com/collegebasketball/ncaa-tournament/brackets/viewable_men')
         html = driver.page_source
         driver.close()
