@@ -6,11 +6,11 @@ from urlconnection import soupify
 
 class Bracket:
     def __init__(self, round_num):
-        self.region_0 = Region()
-        self.region_1 = Region()
-        self.region_2 = Region()
-        self.region_3 = Region()
-        self.region_4 = Region()
+        self.region_0 = Region('First Four')
+        self.region_1 = Region('South')
+        self.region_2 = Region('East')
+        self.region_3 = Region('West')
+        self.region_4 = Region('Mid-West')
         self.region_dict = {
             0: self.region_0,
             1: self.region_1,
@@ -47,21 +47,10 @@ class Bracket:
     def scrape_names(self):
         soup = soupify('https://www.cbssports.com/collegebasketball/ncaa-tournament/brackets/viewable_men')
         for region_num, region in enumerate(soup.find_all('li', class_=f'round{self.round_num}', limit=5)):
-            region_name = self.region_names[region_num]
             print(region_num)
-            for team in region.find_all('li', class_='team'):
-                if not team.text:
-                    continue
-                # print(team)
-                team_name = team.find('span', class_='name').text
-                team_seed = int(team.find('span', class_='seed').text)
-                team_score = int(team.find('span', class_='score').text)
-                print(team_name)
-                self.region_dict[region_num].add_team(
-                        Team(name=team_name,
-                             region=region_name,
-                             seed=team_seed,
-                             score=team_score))
+            for game in region.find_all('li', class_='game'):
+                self.region_dict[region_num].add_game(
+                        game)
 
 
 b = Bracket(0)

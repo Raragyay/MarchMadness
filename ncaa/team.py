@@ -1,7 +1,7 @@
 class Team:
-    def __init__(self, **kwargs):
+    def __init__(self, team_info):
         self.name = ''
-        for key, value in kwargs['kwargs'].items():
+        for key, value in team_info.items():
             setattr(self, key, value)
 
     def __repr__(self):
