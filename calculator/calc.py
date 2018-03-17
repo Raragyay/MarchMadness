@@ -43,7 +43,7 @@ def calc_expr():
             operand_stack.append(token)
         elif token == '(':
             operator_stack.append(token)
-        elif token == ')':  # TODO: Add parentheses
+        elif token == ')':
             while operator_stack[-1] != '(':
                 operator = operator_stack.pop()
                 operand_2 = operand_stack.pop()
